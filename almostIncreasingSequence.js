@@ -17,7 +17,7 @@ if (sequence.length > 2) {
         orderedSeq = [...newSeq];
         orderedSeq.sort((a,b)=>a-b);
         uniqueSeq = Array.from(new Set(orderedSeq));
-        console.log(newSeq + ' - ' + orderedSeq + ' - ' + uniqueSeq);
+        //console.log(newSeq + ' - ' + orderedSeq + ' - ' + uniqueSeq);
         if (arrayEquals(newSeq, orderedSeq) && arrayEquals(orderedSeq, uniqueSeq)) {
             ret = true;
             break;
