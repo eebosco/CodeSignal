@@ -32,11 +32,8 @@ for (var i = 0; i < sequence.length; i++) {
         newSeq.splice(i, 1);
         orderedSeq = [...newSeq];
         orderedSeq.sort((a,b)=>a-b);
-        uniqueSeq = Array.from(new Set(orderedSeq));
         //console.log(newSeq + ' - ' + orderedSeq + ' - ' + uniqueSeq);
-        if (arrayEquals(newSeq, orderedSeq) && arrayEquals(orderedSeq, uniqueSeq)) {
-            return true;
-        }
+        if (arrayEquals(newSeq, orderedSeq)) return true;
     }
 
 return false;
